@@ -41,21 +41,3 @@ const ChatMessages = () => {
 }
 
 export default ChatMessages
-
-          {/* Received Message
-          <div className="flex items-end">
-            <img src="/api/placeholder/32/32" className="w-8 h-8 rounded-full" />
-            <div className="ml-2 bg-white rounded-lg rounded-bl-none p-4 shadow-sm max-w-md">
-              <p className="text-gray-800">Hey! How's everything going with the new design?</p>
-              <span className="text-xs text-gray-500 mt-1 block">10:42 AM</span>
-            </div>
-          </div>
-
-          Sent Message
-          <div className="flex items-end justify-end">
-            <div className="mr-2 bg-indigo-600 rounded-lg rounded-br-none p-4 shadow-sm max-w-md">
-              <p className="text-white">It's coming along great! I'll send you the preview soon.</p>
-              <span className="text-xs text-indigo-200 mt-1 block">10:45 AM</span>
-            </div>
-          </div>
-        </div> */}

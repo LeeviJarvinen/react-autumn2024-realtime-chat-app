@@ -8,13 +8,9 @@ import HomePage from './pages/HomePage'
 import LoginPage from './pages/LoginPage'
 import RegisterPage from './pages/RegisterPage'
 import ChatPage from './pages/ChatPage'
-
 import MainLayout from './layout/MainLayout'
-import AuthLayout from './layout/AuthLayout'
-import ChatLayout from './layout/ChatLayout'
 import { useSelector } from 'react-redux'
 import NotFoundPage from './pages/NotFoundPage'
-import PersistentLayout from './layout/PersistentLayout'
 
 
 

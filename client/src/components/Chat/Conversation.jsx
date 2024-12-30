@@ -6,15 +6,14 @@ import { useSocketContext } from '../../context/SocketContext';
 
 const Conversation = ({ conversation }) => {
     const dispatch = useDispatch()
-    const selectedConversation = useSelector((state) => state.conversation.selectedConversation)
-    // const isSelected = selectedConversation?._id === conversation._id;
+    // const selectedConversation = useSelector((state) => state.conversation.selectedConversation)
     const { onlineUsers } = useSocketContext()
     const isOnline = onlineUsers.includes(conversation._id)
 
     return (
         <>
             <Link onClick={() => dispatch(setSelectedConversation(conversation))}>
-                <div key={conversation._id} className={`w-72 flex items-center p-3 rounded-lg cursor-pointer ${conversation._id === 0 ? 'bg-indigo-50' : 'hover:bg-gray-200'}`}>
+                <div key={conversation._id} className={`w-72 lg: flex items-center p-3 rounded-lg cursor-pointer ${conversation._id === 0 ? 'bg-indigo-50' : 'hover:bg-gray-200'}`}>
                     <div className="relative">
                         <div className={`avatar ${isOnline ? 'online-bottom' : 'offline-bottom'}`}>
                             <div className="w-10 rounded-full">

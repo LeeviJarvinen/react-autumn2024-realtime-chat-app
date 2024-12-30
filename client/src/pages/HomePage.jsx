@@ -12,7 +12,6 @@ const HomePage = () => {
       <Hero/>
       <Footer/>
     </>
-
   )
 }
 

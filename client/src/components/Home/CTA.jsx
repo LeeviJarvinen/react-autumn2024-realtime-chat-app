@@ -13,7 +13,7 @@ const CTA = () => {
     <div className='bg-banner-bg'>
       <div className="relative overflow-hidden bg-gradient-to-r from-indigo-600 to-blue-600/90">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className='flex justify-between items-center pt-5'>
+          <div className='flex justify-between items-center pt-8'>
             <h1 className='text-indigo-100 text-3xl font-semibold no-underline'>
               CHAT.TY
             </h1>

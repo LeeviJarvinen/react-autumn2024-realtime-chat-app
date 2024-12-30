@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Send, Menu } from 'lucide-react';
+import { EllipsisVertical } from 'lucide-react';
 import ChatMessages from './ChatMessages';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
@@ -54,28 +54,27 @@ const ChatContainer = () => {
             </div>
           </div>
           }
-        <div class="dropdown relative inline-flex rtl:[--placement:bottom-end]">
-          <button id="dropdown-header" type="button" class="dropdown-toggle btn btn-primary" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
-            Dropdown
-            <span class="icon-[tabler--chevron-down] dropdown-open:rotate-180 size-4"></span>
+        <div className="dropdown relative inline-flex rtl:[--placement:bottom-end]">
+          <button id="dropdown-header" type="button" className="dropdown-toggle" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">    
+            <EllipsisVertical  className="dropdown-open:rotate-180 size-6 transition hover:scale-125 hover:text-indigo-600"/>
           </button>
-          <ul class="dropdown-menu dropdown-open:opacity-100 hidden min-w-60" role="menu" aria-orientation="vertical" aria-labelledby="dropdown-header">
-            <li class="dropdown-header gap-2">
-              <div class="avatar">
-                <div class="w-10 rounded-full">
+          <ul className="dropdown-menu dropdown-open:opacity-100 hidden min-w-60" role="menu" aria-orientation="vertical" aria-labelledby="dropdown-header">
+            <li className="dropdown-header gap-2">
+              <div className="avatar">
+                <div className="w-10 rounded-full">
                   <img src="https://cdn.flyonui.com/fy-assets/avatar/avatar-2.png" alt="User Avatar" />
                 </div>
               </div>
               <div>
-                <h6 class="text-base-content/90 text-base font-semibold">{userInfo.username}</h6>
-                <small class="text-base-content/50 text-sm font-normal">{userInfo.email}</small>
+                <h6 className="text-base-content/90 text-base font-semibold">{userInfo.username}</h6>
+                <small className="text-base-content/50 text-sm font-normal">{userInfo.email}</small>
               </div>
             </li>
-            <li><a class="dropdown-item" href="#">My Profile</a></li>
-            <li><a class="dropdown-item" href="#">Settings</a></li>
-            <li><a class="dropdown-item" href="#">FAQ</a></li>
-            <li class="dropdown-footer gap-2">
-              <button class="btn btn-error btn-soft btn-block" onClick={handleLogout}>Sign out</button>
+            <li><a className="dropdown-item" href="#">My Profile</a></li>
+            <li><a className="dropdown-item" href="#">Settings</a></li>
+            <li><a className="dropdown-item" href="#">FAQ</a></li>
+            <li className="dropdown-footer gap-2">
+              <button className="btn btn-error btn-soft btn-block" onClick={handleLogout}>Sign out</button>
             </li>
           </ul>
         </div>

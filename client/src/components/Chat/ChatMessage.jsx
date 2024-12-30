@@ -16,10 +16,6 @@ const ChatMessage = ({message}) => {
       <div className='chat-footer text-base-content/50'>
         <time className='text-base-content/50'>{formattedTime}</time>
       </div>
-      {/* <div className="chat-footer text-base-content/50">
-        Seen
-        <span className="icon-[tabler--checks] text-success align-bottom"></span>
-    </div> */}
     </div>
   )
 }
