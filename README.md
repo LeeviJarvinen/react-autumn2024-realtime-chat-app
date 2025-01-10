@@ -1,8 +1,8 @@
 (WIP) This is my project for my school thesis. I am currently actively developing this project.
 
-![Homepage](client/project_images/homepage.png)
+![Homepage](project_images/homepage.png)
 
-![Chatpage](client/project_images/chatpage.png)
+![Chatpage](project_images/chatpage.png)
 
 # React + Vite
 
