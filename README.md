@@ -1,7 +1,9 @@
 (WIP) This is my project for my school thesis. I am currently actively developing this project.
 
+Homepage  view
 ![Homepage](project_images/homepage.png)
 
+Chatpage  view
 ![Chatpage](project_images/chatpage.png)
 
 # React + Vite
