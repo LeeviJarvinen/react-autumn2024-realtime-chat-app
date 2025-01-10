@@ -80,10 +80,8 @@ const ChatContainer = () => {
         </div>
 
         </div>
-        {/* Messages */}
+        
         <ChatMessages />
-
-        {/* Message Input */}
         <ChatInput />
       </div>
   )
