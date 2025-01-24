@@ -5,15 +5,19 @@ import Conversation from '../models/conversationModel.js';
 import { getReceiverSocketId } from '../config/socket.js';
 
 const sendMsg = asyncHandler(async(req, res) => {
+    const { message } = req.body;
+    const { id: receiverId } = req.params;
+    const senderId = req.user._id;
+
+    if (!message || message.trim() === '') {
+        res.status(400);
+        throw new Error('Message cannot be empty');
+    }
     try {
-        const { message } = req.body;
-        const { id: receiverId } = req.params;
-        const senderId = req.user._id;
-    
         let conversation = await Conversation.findOne({
             participants: { $all: [senderId, receiverId] }
         })
-    
+
         if(!conversation) {
             conversation = await Conversation.create({
                 participants: [senderId, receiverId],

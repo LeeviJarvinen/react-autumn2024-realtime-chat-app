@@ -54,6 +54,11 @@ const login = asyncHandler(async (req, res) => {
 
     const user = await User.findOne({username})
 
+    if (!username || !password) {
+        res.status(400);
+        throw new Error('Username and password are required');
+    }
+
     if(user && await user.matchPassword(password)) {
         generateToken(res, user._id);
         res.status(201).json({
