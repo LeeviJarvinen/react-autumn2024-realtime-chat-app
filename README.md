@@ -1,4 +1,6 @@
-(WIP) This is my project for my school thesis. I am currently actively developing this project.
+This was my project for my school thesis you can read it here: https://urn.fi/URN:NBN:fi:amk-202501302101
+
+This project is still being updated.
 
 Homepage  view
 ![Homepage](project_images/homepage.png)
