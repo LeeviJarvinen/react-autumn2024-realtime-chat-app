@@ -105,10 +105,3 @@ The application runs locally at: `http://localhost:5173`
 |--------|--------|--------|
 | GET | `/:id` | Fetches messages of a specific conversation |
 | POST | `/send/:id` | Sends a message |
-
-## 📜 License
-This project is open-source and released under the MIT license.
-
-## 📞 Contact
-Project Developer: **Leevi Järvinen**  
-For inquiries, contact via GitHub!
