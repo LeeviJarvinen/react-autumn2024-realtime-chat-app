@@ -1,7 +1,8 @@
 # Real-Time Chat Application
 
 ## 📌 Project Description
-This project is a real-time chat application built using **React.js** and **Socket.IO** along with modern web technologies. The application allows users to communicate in real-time, log in and out, and manage messages securely.
+This project was my thesis. Real-time chat application built using **React.js** and **Socket.IO** along with modern web technologies. The application allows users to communicate in real-time, log in and out, and manage messages securely.
+Read it here: https://urn.fi/URN:NBN:fi:amk-202501302101
 
 ## 🚀 Technologies Used
 
